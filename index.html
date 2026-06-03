@@ -25,7 +25,30 @@
         <a href="#contact" class="btn btn-primary">Say Hello ✨</a>
     </nav>
 
-    <header class="hero">
+    <!-- Table of Contents Section -->
+    <section class="toc-section">
+        <div class="toc-inner">
+            <div class="toc-left fade-in">
+                <p class="toc-label">Portfolio Overview</p>
+                <h2 class="toc-title">TABLE OF<br>CONTENTS</h2>
+                <p class="toc-desc">A UI/UX focused frontend developer passionate about crafting modern, accessible, and user-centered digital experiences — from clean interfaces to robust full-stack solutions.</p>
+                <p class="toc-name">Sathya Vitharanage</p>
+            </div>
+            <div class="toc-right fade-in delay-1">
+                <div class="toc-grid">
+                    <a href="#home" class="toc-pill toc-pill-outline">Home</a>
+                    <a href="#about" class="toc-pill toc-pill-filled">About</a>
+                    <a href="#skills" class="toc-pill toc-pill-outline">Skills</a>
+                    <a href="#education" class="toc-pill toc-pill-filled">Education</a>
+                    <a href="#certifications" class="toc-pill toc-pill-outline">Certifications</a>
+                    <a href="#projects" class="toc-pill toc-pill-filled">Projects</a>
+                    <a href="#contact" class="toc-pill toc-pill-outline toc-pill-full">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header id="home" class="hero">
         <div class="hero-content fade-in">
             <h1 class="hero-title">Sathya Vitharanage</h1>
             <h2 class="hero-subtitle">Frontend Developer | UI/UX Focused IT Undergraduate</h2>
@@ -146,7 +169,7 @@
                     <p class="edu-date">Present</p>
                 </div>
             </div>
-            <div class="cert-pane">
+            <div id="certifications" class="cert-pane">
                 <h3>Credentials</h3>
                 <div class="cert-badges">
                     <div class="cert-badge">
@@ -173,6 +196,12 @@
                             <p>UI/UX Design Basics</p>
                         </div>
                     </div>
+                    <div class="cert-badge">
+                        <div class="badge-info">
+                            <h4>Britishway English Academy</h4>
+                            <p>Advanced Spoken English</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -180,13 +209,13 @@
 
     <section id="projects" class="section">
         <div class="section-header fade-in">
-            <h2>Featured <span class="highlight">Projects</span> 🚀</h2>
+            <h2>Featured <span class="highlight">Projects</span> </h2>
             <p>A peek into my recent development works.</p>
         </div>
         <div class="project-grid">
             <div class="project-card fade-in">
                 <div class="project-image">
-                    <img src="project1.png" alt="Responsive Website Design">
+                    <img src="project3.png" alt="Responsive Website Design">
                 </div>
                 <div class="project-info">
                     <h3>Responsive Website Design</h3>
@@ -196,22 +225,75 @@
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                     </div>
+                    <a href="https://sathyavitharanage200323.github.io/cake-project-/" class="btn btn-secondary" target="_blank" style="margin-top:auto; align-self: flex-start;">View Live</a>
                 </div>
             </div>
 
             <div class="project-card fade-in delay-1">
                 <div class="project-image">
-                    <img src="project2.png" alt="Appointment Booking">
+                    <img src="library.jpg" alt="Library Management System">
                 </div>
                 <div class="project-info">
-                    <h3>Appointment Booking Platform</h3>
-                    <p>Spring Boot project utilizing MySQL for robust data management, paired with an intuitive frontend
-                        for booking management.</p>
+                    <h3>Library Management System</h3>
+                    <p>A comprehensive Spring Boot web application for managing library operations including book cataloging, staff management, and user interactions.</p>
                     <div class="tags">
                         <span class="tag">Spring Boot</span>
                         <span class="tag">MySQL</span>
                     </div>
-                    <a href="https://github.com/Sathya/unilink" class="btn btn-secondary"
+                    <a href="https://github.com/sathyavitharanage200323/online-library-website-with-fully-functionality" class="btn btn-secondary"
+                        style="margin-top:auto; align-self: flex-start;">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card fade-in delay-1">
+                <div class="project-image">
+                    <img src="unilink.jpg" alt="UniLink">
+                </div>
+                <div class="project-info">
+                    <h3>UniLink</h3>
+                    <p>A full-stack web application that streamlines academic consultation scheduling between students and lecturers.</p>
+                    <div class="tags">
+                        <span class="tag">MERN</span>
+                        <span class="tag">MVC</span>
+                    </div>
+                    <a href="https://github.com/sathyavitharanage200323/UniLink-.git" class="btn btn-secondary" target="_blank"
+                        style="margin-top:auto; align-self: flex-start;">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card fade-in delay-2">
+                <div class="project-image">
+                    <img src="campusx.jpg" alt="CampusX">
+                </div>
+                <div class="project-info">
+                    <h3>CampusX – Smart Campus Management</h3>
+                    <p>A full-stack web application for managing campus facilities, bookings, incident tickets, notifications, and users with role-based access control.</p>
+                    <div class="tags">
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">React 19</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">OAuth2</span>
+                    </div>
+                    <a href="https://github.com/sathyavitharanage200323/it3030-paf-2026-smart-campus-group450.git" class="btn btn-secondary" target="_blank"
+                        style="margin-top:auto; align-self: flex-start;">View Code</a>
+                </div>
+            </div>
+
+            <div class="project-card fade-in delay-2">
+                <div class="project-image">
+                    <img src="docfeed.png" alt="DocFeed">
+                </div>
+                <div class="project-info">
+                    <h3>Doctor Reports & Doctor Feedback Platform</h3>
+                    <p>A comprehensive healthcare management portal with dashboard, user management, doctor profiles, medical reports, and patient feedbacks. Built with Node.js, Express, and MongoDB.</p>
+                    <div class="tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                    <a href="https://github.com/sathyavitharanage200323/Doctor_feedback-" class="btn btn-secondary" target="_blank"
                         style="margin-top:auto; align-self: flex-start;">View Code</a>
                 </div>
             </div>
