@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
     });
 
+    // Mouse glow follow
+    document.addEventListener('mousemove', (e) => {
+        document.body.style.setProperty('--mouse-x', e.clientX + 'px');
+        document.body.style.setProperty('--mouse-y', e.clientY + 'px');
+    });
+
     // 0b. Typing Animation for Professional Summary
     const typingEl = document.getElementById('typingText');
     const fullText = "I am a passionate UI/UX focused Frontend Developer and IT Undergraduate, dedicated to creating intuitive, responsive, and visually stunning web applications. With a strong foundation in modern web technologies and specific expertise in user-centered design, I bridge the gap between aesthetic product design and robust technical implementation.";

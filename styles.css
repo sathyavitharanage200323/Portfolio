@@ -24,10 +24,10 @@
     --card-bg: rgba(30, 41, 59, 0.8);
     --cert-bg: #1E293B;
     --input-color: white;
-    --about-text: var(--text-dark);
-    --about-section-bg: #F8FAFC;
-    --about-card-bg: white;
-    --about-p-color: #64748b;
+    --about-text: #F8FAFC;
+    --about-section-bg: #0F172A;
+    --about-card-bg: #1E293B;
+    --about-p-color: #94A3B8;
 }
 
 /* Light Mode */
@@ -65,6 +65,22 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
+}
+
+/* Mouse glow effect */
+body::before {
+    content: '';
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(59,130,246,0.12) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    transition: left 0.08s ease, top 0.08s ease;
+    left: var(--mouse-x, -9999px);
+    top: var(--mouse-y, -9999px);
 }
 
 h1, h2, h3, h4, .logo {
@@ -191,6 +207,11 @@ body.light-mode .hero {
 }
 body.light-mode .footer-bottom { border-top-color: rgba(0,0,0,0.08); }
 
+/* Lighter glow in light mode */
+body.light-mode::before {
+    background: radial-gradient(circle, rgba(59,130,246,0.06) 0%, transparent 70%);
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -243,7 +264,8 @@ body.light-mode .footer-bottom { border-top-color: rgba(0,0,0,0.08); }
    TABLE OF CONTENTS
 ========================= */
 .toc-section {
-    background: var(--bg-darker);
+    background: linear-gradient(rgba(15,23,42,0.82), rgba(15,23,42,0.82)),
+                url('bg hero.jpg') center/cover no-repeat;
     width: 100vw;
     position: relative;
     left: 50%;
