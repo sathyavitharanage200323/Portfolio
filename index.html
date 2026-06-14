@@ -22,7 +22,25 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#projects">Work</a></li>
         </ul>
-        <a href="#contact" class="btn btn-primary">Say Hello ✨</a>
+        <div class="navbar-right">
+            <a href="#contact" class="btn btn-primary">Say Hello ✨</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+            <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+        </button>
+        </div>
     </nav>
 
     <!-- Table of Contents Section -->
@@ -55,6 +73,7 @@
             <p class="hero-bio">Crafting modern, accessible, and user-centered digital experiences.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-accent">Contact Me</a>
+                <a href="Sathya_CV.pdf" download class="btn btn-secondary">Download CV</a>
             </div>
         </div>
         <div class="hero-image fade-in delay-1">
@@ -68,89 +87,238 @@
         <div class="section-header fade-in">
             <h2>Professional <span class="highlight">Summary</span></h2>
         </div>
-        <div class="about-container fade-in delay-1">
-            <p class="summary-text">
-                I am a passionate UI/UX focused Frontend Developer and IT Undergraduate, dedicated to creating
-                intuitive, responsive, and visually stunning web applications. With a strong foundation in modern web
-                technologies and specific expertise in user-centered design, I bridge the gap between aesthetic product
-                design and robust technical implementation.
-            </p>
+        <div class="about-layout fade-in delay-1">
+            <div class="about-bio-pic">
+                <div class="bio-pic-frame">
+                    <div class="bio-pic-glow"></div>
+                    <img src="biopic.jpg" alt="Sathya Vitharanage">
+                    <div class="bio-pic-ring"></div>
+                </div>
+            </div>
+            <div class="about-container">
+                <p class="summary-text" id="typingText"></p>
+                <span class="typing-cursor">|</span>
+            </div>
         </div>
     </section>
 
     <section id="skills" class="section">
         <div class="section-header fade-in">
             <h2>Technical <span class="highlight">Skills</span></h2>
-            <p>The tools and technologies I use to build scalable experiences.</p>
+            <p>The tools and technologies I work with.</p>
         </div>
-        <div class="skill-card-grid fade-in delay-1">
-            <div class="skill-card">
-                <h3>Frontend</h3>
-                <ul class="skill-list">
-                    <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                            </svg></span> <span>HTML5</span></li>
-                    <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                            </svg></span> <span>CSS3</span></li>
-                    <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                            </svg></span> <span>JavaScript</span></li>
-                    <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                            </svg></span> <span>Responsive Design</span></li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3>UI/UX</h3>
-                <ul class="skill-list">
-                    <li><span class="tool-icon"><svg width="18" height="24" viewBox="0 0 12 18" fill="var(--primary)"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6 18c-1.65 0-3-1.35-3-3V9H0V3c0-1.65 1.35-3 3-3h3v18zM6 0h3c1.65 0 3 1.35 3 3s-1.35 3-3 3H6V0zm0 6h3c1.65 0 3 1.35 3 3s-1.35 3-3 3H6V6z" />
-                            </svg></span> <span>Figma</span></li>
-                    <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 4h16v16H4V4zm2 2v12h12V6H6zM8 8h8v2H8V8zm0 4h8v2H8v-2z" />
-                            </svg></span> <span>Wireframing</span></li>
-                    <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2v20M2 12h20M7 7l10 10M17 7L7 17" />
-                            </svg></span> <span>Prototyping</span></li>
-                    <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
-                            </svg></span> <span>Usability Testing</span></li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3>Development</h3>
-                <ul class="skill-list">
-                    <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
-                            </svg></span> <span>MySQL</span></li>
-                    <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.5 14h-7V7H7v8.5c0 .82.68 1.5 1.5 1.5h7V14zM19 8h-4V4h-2v4H9v2h4v4h2v-4h4V8z" />
-                            </svg></span> <span>Git</span></li>
-                    <li><span><svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 2L2 22h20L12 2zm0 4.14L18.06 19H5.94L12 6.14z" />
-                            </svg></span> <span>Spring Boot</span></li>
-                    <li><span class="tool-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="var(--primary)"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.42 2.76l-8.58 6.54L5.68 7.3 2 9.8v4.4l3.68 2.5 3.16-2.02 8.58 6.54c1.1.84 2.58.06 2.58-1.34V4.1c0-1.4-1.48-2.18-2.58-1.34zM16 17H8v-2h8v2zM16 9H8V7h8v2z" />
-                            </svg></span> <span>VS Code</span></li>
-                </ul>
+        <div class="skills-panel fade-in delay-1">
+            <!-- Sidebar -->
+            <nav class="skills-nav">
+                <button class="skills-tab active" data-tab="languages">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    Languages
+                </button>
+                <button class="skills-tab" data-tab="frontend">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    Frontend
+                </button>
+                <button class="skills-tab" data-tab="backend">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    Backend
+                </button>
+                <button class="skills-tab" data-tab="databases">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+                    Databases
+                </button>
+                <button class="skills-tab" data-tab="uiux">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                    UI/UX
+                </button>
+                <button class="skills-tab" data-tab="tools">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                    Tools
+                </button>
+            </nav>
+
+            <!-- Content panel -->
+            <div class="skills-content">
+
+                <!-- Languages -->
+                <div class="skills-pane active" id="tab-languages">
+                    <div class="skills-pane-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skills-pane" id="tab-frontend">
+                    <div class="skills-pane-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind">
+                            <span>Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skills-pane" id="tab-backend">
+                    <div class="skills-pane-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
+                            <span>Express</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skills-pane" id="tab-databases">
+                    <div class="skills-pane-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX -->
+                <div class="skills-pane" id="tab-uiux">
+                    <div class="skills-pane-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                        <h3>UI/UX</h3>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva">
+                            <span>Canva</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="img1.png" alt="Wireframing">
+                            <span>Wireframing</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="img2.png" alt="Prototyping">
+                            <span>Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skills-pane" id="tab-tools">
+                    <div class="skills-pane-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-icons-grid">
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ">
+                            <span>IntelliJ</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
+                            <span>Postman</span>
+                        </div>
+                        <div class="skill-icon-card">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="npm">
+                            <span>npm</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -209,96 +377,182 @@
 
     <section id="projects" class="section">
         <div class="section-header fade-in">
-            <h2>Featured <span class="highlight">Projects</span> </h2>
+            <h2>Featured <span class="highlight">Projects</span></h2>
             <p>A peek into my recent development works.</p>
         </div>
-        <div class="project-grid">
-            <div class="project-card fade-in">
-                <div class="project-image">
-                    <img src="project3.png" alt="Responsive Website Design">
-                </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters fade-in">
+            <button class="pf-btn active" data-filter="all">All</button>
+            <button class="pf-btn" data-filter="html">HTML/CSS</button>
+            <button class="pf-btn" data-filter="springboot">Spring Boot</button>
+            <button class="pf-btn" data-filter="mern">MERN</button>
+            <button class="pf-btn" data-filter="react">React</button>
+            <button class="pf-btn" data-filter="nodejs">Node.js</button>
+            <button class="pf-btn" data-filter="mysql">MySQL</button>
+            <button class="pf-btn" data-filter="figma">Figma</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="project-grid" id="projectGrid">
+
+            <div class="project-card fade-in" data-tags="html"
+                data-title="Responsive Website Design"
+                data-desc="Developed using HTML/CSS with a focus on mobile-first compatibility. Clean and accessible interface elements optimized for seamless interaction."
+                data-tech="HTML5,CSS3"
+                data-img="project3.png"
+                data-github=""
+                data-live="https://sathyavitharanage200323.github.io/cake-project-/">
+                <div class="project-image"><img src="project3.png" alt="Responsive Website Design"></div>
                 <div class="project-info">
                     <h3>Responsive Website Design</h3>
-                    <p>Developed using HTML/CSS with a focus on mobile-first compatibility. Clean and accessible
-                        interface elements optimized for seamless interaction.</p>
-                    <div class="tags">
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
-                    </div>
-                    <a href="https://sathyavitharanage200323.github.io/cake-project-/" class="btn btn-secondary" target="_blank" style="margin-top:auto; align-self: flex-start;">View Live</a>
+                    <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span></div>
                 </div>
             </div>
 
-            <div class="project-card fade-in delay-1">
-                <div class="project-image">
-                    <img src="library.jpg" alt="Library Management System">
-                </div>
+            <div class="project-card fade-in delay-1" data-tags="springboot mysql"
+                data-title="Library Management System"
+                data-desc="A comprehensive Spring Boot web application for managing library operations including book cataloging, staff management, and user interactions."
+                data-tech="Spring Boot,MySQL"
+                data-img="library.jpg"
+                data-github="https://github.com/sathyavitharanage200323/online-library-website-with-fully-functionality"
+                data-live="">
+                <div class="project-image"><img src="library.jpg" alt="Library Management System"></div>
                 <div class="project-info">
                     <h3>Library Management System</h3>
-                    <p>A comprehensive Spring Boot web application for managing library operations including book cataloging, staff management, and user interactions.</p>
-                    <div class="tags">
-                        <span class="tag">Spring Boot</span>
-                        <span class="tag">MySQL</span>
-                    </div>
-                    <a href="https://github.com/sathyavitharanage200323/online-library-website-with-fully-functionality" class="btn btn-secondary"
-                        style="margin-top:auto; align-self: flex-start;">View Code</a>
+                    <div class="tags"><span class="tag">Spring Boot</span><span class="tag">MySQL</span></div>
                 </div>
             </div>
 
-            <div class="project-card fade-in delay-1">
-                <div class="project-image">
-                    <img src="Unilink.jpg" alt="UniLink">
-                </div>
+            <div class="project-card fade-in delay-1" data-tags="mern"
+                data-title="UniLink"
+                data-desc="A full-stack web application that streamlines academic consultation scheduling between students and lecturers."
+                data-tech="MERN,MVC"
+                data-img="Unilink.jpg"
+                data-github="https://github.com/sathyavitharanage200323/UniLink-.git"
+                data-live="">
+                <div class="project-image"><img src="Unilink.jpg" alt="UniLink"></div>
                 <div class="project-info">
                     <h3>UniLink</h3>
-                    <p>A full-stack web application that streamlines academic consultation scheduling between students and lecturers.</p>
-                    <div class="tags">
-                        <span class="tag">MERN</span>
-                        <span class="tag">MVC</span>
-                    </div>
-                    <a href="https://github.com/sathyavitharanage200323/UniLink-.git" class="btn btn-secondary" target="_blank"
-                        style="margin-top:auto; align-self: flex-start;">View Code</a>
+                    <div class="tags"><span class="tag">MERN</span><span class="tag">MVC</span></div>
                 </div>
             </div>
 
-            <div class="project-card fade-in delay-2">
-                <div class="project-image">
-                    <img src="campusx.jpg" alt="CampusX">
-                </div>
+            <div class="project-card fade-in delay-2" data-tags="springboot react mysql"
+                data-title="CampusX – Smart Campus Management"
+                data-desc="A full-stack web application for managing campus facilities, bookings, incident tickets, notifications, and users with role-based access control."
+                data-tech="Spring Boot,React 19,MySQL,JWT,OAuth2"
+                data-img="campusx.jpg"
+                data-github="https://github.com/sathyavitharanage200323/it3030-paf-2026-smart-campus-group450.git"
+                data-live="">
+                <div class="project-image"><img src="campusx.jpg" alt="CampusX"></div>
                 <div class="project-info">
-                    <h3>CampusX – Smart Campus Management</h3>
-                    <p>A full-stack web application for managing campus facilities, bookings, incident tickets, notifications, and users with role-based access control.</p>
-                    <div class="tags">
-                        <span class="tag">Spring Boot</span>
-                        <span class="tag">React 19</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">JWT</span>
-                        <span class="tag">OAuth2</span>
-                    </div>
-                    <a href="https://github.com/sathyavitharanage200323/it3030-paf-2026-smart-campus-group450.git" class="btn btn-secondary" target="_blank"
-                        style="margin-top:auto; align-self: flex-start;">View Code</a>
+                    <h3>CampusX – Smart Campus</h3>
+                    <div class="tags"><span class="tag">Spring Boot</span><span class="tag">React</span><span class="tag">MySQL</span></div>
                 </div>
             </div>
 
-            <div class="project-card fade-in delay-2">
-                <div class="project-image">
-                    <img src="docfeed.png" alt="DocFeed">
-                </div>
+            <div class="project-card fade-in delay-2" data-tags="nodejs"
+                data-title="Doctor Feedback Platform"
+                data-desc="A comprehensive healthcare management portal with dashboard, user management, doctor profiles, medical reports, and patient feedbacks. Built with Node.js, Express, and MongoDB."
+                data-tech="Node.js,Express,MongoDB,PHP"
+                data-img="docfeed.png"
+                data-github="https://github.com/sathyavitharanage200323/Doctor_feedback-"
+                data-live="">
+                <div class="project-image"><img src="docfeed.png" alt="DocFeed"></div>
                 <div class="project-info">
-                    <h3>Doctor Reports & Doctor Feedback Platform</h3>
-                    <p>A comprehensive healthcare management portal with dashboard, user management, doctor profiles, medical reports, and patient feedbacks. Built with Node.js, Express, and MongoDB.</p>
-                    <div class="tags">
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Express</span>
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">PHP</span>
-                    </div>
-                    <a href="https://github.com/sathyavitharanage200323/Doctor_feedback-" class="btn btn-secondary" target="_blank"
-                        style="margin-top:auto; align-self: flex-start;">View Code</a>
+                    <h3>Doctor Feedback Platform</h3>
+                    <div class="tags"><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">PHP</span></div>
                 </div>
             </div>
+
+            <!-- Figma / UI Design Projects -->
+            <div class="project-card fade-in delay-1" data-tags="figma"
+                data-title="Mobile Banking App UI"
+                data-desc="A clean and modern mobile banking app UI design. Includes onboarding screens, dashboard, transaction history, and card management. Add your own Figma link and details later."
+                data-tech="Figma,UI Design,Prototyping"
+                data-img="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80"
+                data-github=""
+                data-live="">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80" alt="Mobile Banking UI">
+                    <div class="project-badge">Figma</div>
+                </div>
+                <div class="project-info">
+                    <h3>Mobile Banking App UI</h3>
+                    <div class="tags"><span class="tag">Figma</span><span class="tag">UI Design</span></div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in delay-1" data-tags="figma"
+                data-title="E-Commerce Website Redesign"
+                data-desc="A full redesign of an e-commerce platform with focus on conversion optimization, clean product pages, and accessible checkout flow. Add your own Figma link and details later."
+                data-tech="Figma,Wireframing,UI/UX"
+                data-img="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80"
+                data-github=""
+                data-live="">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80" alt="E-Commerce Redesign">
+                    <div class="project-badge">Figma</div>
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Website Redesign</h3>
+                    <div class="tags"><span class="tag">Figma</span><span class="tag">Wireframing</span></div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in delay-2" data-tags="figma"
+                data-title="Healthcare Dashboard UI"
+                data-desc="A data-rich healthcare admin dashboard with patient overview, appointment scheduling, and analytics panels. Designed with accessibility and clarity in mind. Add your details later."
+                data-tech="Figma,UI Design,Dashboard"
+                data-img="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80"
+                data-github=""
+                data-live="">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" alt="Healthcare Dashboard">
+                    <div class="project-badge">Figma</div>
+                </div>
+                <div class="project-info">
+                    <h3>Healthcare Dashboard UI</h3>
+                    <div class="tags"><span class="tag">Figma</span><span class="tag">Dashboard</span></div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in delay-2" data-tags="figma"
+                data-title="Portfolio Website Concept"
+                data-desc="A creative portfolio website concept with dark/light mode, animated hero section, and smooth scroll interactions. Designed as a Figma prototype. Add your details later."
+                data-tech="Figma,Prototyping,UI/UX"
+                data-img="https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=800&q=80"
+                data-github=""
+                data-live="">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=800&q=80" alt="Portfolio Concept">
+                    <div class="project-badge">Figma</div>
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website Concept</h3>
+                    <div class="tags"><span class="tag">Figma</span><span class="tag">Prototyping</span></div>
+                </div>
+            </div>
+
         </div>
     </section>
+
+    <!-- Project Modal -->
+    <div class="proj-modal-overlay" id="projModal">
+        <div class="proj-modal">
+            <button class="proj-modal-close" id="projModalClose">✕</button>
+            <div class="proj-modal-img-wrap">
+                <img id="modalImg" src="" alt="">
+            </div>
+            <div class="proj-modal-body">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDesc"></p>
+                <div class="tags" id="modalTags"></div>
+                <div class="proj-modal-actions" id="modalActions"></div>
+            </div>
+        </div>
+    </div>
 
     <footer id="contact" class="footer-section">
         <div class="footer-content fade-in">
